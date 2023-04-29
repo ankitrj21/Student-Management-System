@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SMS.master.cs" Inherits="Student_Management_System.SMS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+                <h1>Student Management System</h1>
+                <hr />
+                <div>
+                    <asp:Label ID="LabelUserlogin" runat="server" Text=""></asp:Label> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    <asp:LinkButton ID="LinkCourse" runat="server" OnClick="LinkCourse_Click">Course</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp
+                    <asp:LinkButton ID="LinkTutor" runat="server" OnClick="LinkTutor_Click">Tutor</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp
+                    <asp:LinkButton ID="LinkStudent" runat="server" OnClick="LinkStudent_Click">Student</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp
+                    <asp:LinkButton ID="LinkLogout" runat="server" OnClick="LinkLogout_Click">Logout</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp
+                </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </center>
+        </div>
+    </form>
+</body>
+</html>
